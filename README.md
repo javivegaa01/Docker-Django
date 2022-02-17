@@ -5,6 +5,8 @@ Para probar la aplicación solo tienes que:
     apt install docker.io docker-compose    
 ## Clonar repositorio
     git clone https://github.com/javivegaa01/Docker-Django.git
+## Bajar la imagen
+    docker pull javiutrera01/django
 ## Desplegar el docker-compose.yml
 Ejecutar:
 
