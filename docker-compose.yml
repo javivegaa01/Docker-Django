@@ -1,0 +1,25 @@
+version: '3.1'
+services:
+  django:
+    container_name: django
+    image: javiutrera01/django
+    restart: always
+    environment:
+      DATABASE_NAME: django
+      DATABASE_USER: user
+      DATABASE_PASSWORD: user
+      DATABASE_HOST: server_mariadb
+    ports:
+      - 8081:8001
+    depends_on:
+      - db
+  db:
+    container_name: server_mariadb
+    image: mariadb:10.5
+    restart: always
+    environment:
+      MYSQL_DATABASE: django
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+      MYSQL_ROOT_PASSWORD: root
+
