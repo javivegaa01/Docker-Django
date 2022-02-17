@@ -3,6 +3,8 @@
 Para probar la aplicación solo tienes que:  
 ## Instalar Docker  
     apt install docker.io docker-compose    
+## Clonar repositorio
+    git clone https://github.com/javivegaa01/Docker-Django.git
 ## Desplegar el docker-compose.yml
 Ejecutar:
 
